@@ -2,7 +2,7 @@ import requests
 import os
 
 sha = os.environ["GITHUB_SHA"]
-resp = requests.get("https://api.github.com/repos/ray-project/ray/commits/{}/check-suites".format(sha))
+resp = requests.get("https://api.github.com/repos/simon-mo/test-gha/commits/{}/check-suites".format(sha))
 data = resp.json()
 print(data)
 for check in data["check_suites"]:
