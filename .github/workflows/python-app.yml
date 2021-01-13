@@ -26,4 +26,5 @@ jobs:
         pip install requests
     - name: Run
       run: |
+        sleep 60
         python a.py
